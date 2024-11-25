@@ -58,7 +58,7 @@ def motion_detect(prev_frame: cv.typing.MatLike, curr_frame: cv.typing.MatLike) 
     diff = cv.absdiff(prev_frame, curr_frame)
     diff = cv.threshold(diff, 30, 255, cv.THRESH_BINARY)[1]
 
-    motion_detected = cv.countNonZero(diff) > 500
+    motion_detected = cv.countNonZero(diff) > 5000
     return motion_detected
 
 
