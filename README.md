@@ -1,0 +1,1 @@
+This is an in-progress project that I am using to set up an automatic Face-ID door opener for my apartment door. I use OpenCV for face recognition and calculate frame difference to detect motion before running facial detection code.
